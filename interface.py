@@ -1,13 +1,8 @@
 from tkinter import *
-from nltk.metrics.distance import jaccard_distance
-from nltk.util import ngrams
-import py2neo
-from py2neo import Node, Relationship, Graph, Path, Subgraph
-from py2neo import NodeMatcher, RelationshipMatcher
-from gnql import *
-from tkinter import ttk
 
-import nltk
+from nltk.metrics.distance import jaccard_distance
+
+from gnql import *
 
 
 # action to connect to graph database
@@ -121,7 +116,7 @@ label_username = Label(label_frame_connect, text="user name", font=(12))  # user
 label_username.place(relx=0.04, rely=0.26, anchor='n')
 label_password = Label(label_frame_connect, text="Password", font=(12))  # Password Label
 label_password.place(relx=0.04, rely=0.5, anchor='n')
-
+#Connection label
 connection_status_lab = Label(label_frame_connect, text="Connection status", font=(12))  # Password Label
 connection_status_lab.place(relx=0.4, rely=0.01, anchor='n')
 
